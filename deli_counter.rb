@@ -1,15 +1,13 @@
 def line (array)
-  if array.length > 0
-    new_arr = []
-    counter = 1
-    array.each do |name]
-        new_arr.push("#{counter}. #{name}")
-        counter +=1
-      end
-      puts "The line is current #{new_arr}"
-    else
-      puts "THe line is currently empty"
+  if array.length == 0
+    puts "The line is currently empty."
+  else
+    message = "The line is currently:"
+    array.each_with_index do |name, index|
+      message += "#{index+1}. #{name}"
     end 
+    puts message
+
+    end
 
 end
-
