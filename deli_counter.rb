@@ -13,6 +13,3 @@ def line (array)
 
 end
 
-
-end
-# Write your code here.
